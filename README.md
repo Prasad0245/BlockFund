@@ -1,80 +1,127 @@
-# Blockchain-based crowdfunding platform: `FundVerse`
+# BlockFund - Blockchain-based Crowdfunding Platform
 
-**FundVerse** is a blockchain-based decentralized platform that combines social interactions with crowdfunding mechanisms, allowing any user to raise funds while becoming popular in the social network. Being **built over the Ethereum blockchain**, FundVerse is structured as a Decentralized Application **(DApp)**, that fosters crowdfunding without the intervention of any central authority,and recognizes the active role of donors, enabling them to support artists or projects as well as humanity use cases.
+**BlockFund** is a decentralized crowdfunding platform that merges blockchain technology with social networking. Built on the **Ethereum blockchain**, BlockFund allows users to raise and support funds securely, transparently, and without centralized control. It empowers donors by recognizing their support and enabling funding for artists, projects, and humanitarian causes.
 
+---
 
-## Why blockchain based crowdfunding?
+## 🚀 Why Blockchain-Based Crowdfunding?
 
-- Blockchain is a **decentralized ledger** that records network transactions securely and transparently hence contributors can determine how legitimate the campaign is?
-- There is **no minimum contribution requirement** i.e Contributors have the freedom to support campaigns with any amount they choose
--‌ Better **flexibility** and **accessibility** leads to **improved** reach of campaigns
-- Blockchain is **immutable** and support real time monitoring of data
--‌ Whereas, **DApps** are the applications that **run without downtime**, fraud, or any sort of regulations.
+- **Decentralization**: No central authority controls the platform. Users can fund and launch campaigns independently.
+- **Transparency & Security**: Blockchain is a decentralized ledger where all transactions are verifiable, making it easy to validate the legitimacy of a campaign.
+- **No Minimum Contribution**: Contributors can support campaigns with any amount they choose.
+- **Real-Time Monitoring**: Blockchain enables real-time tracking of funds and campaign progress.
+- **Immutable Records**: Campaign data and transactions cannot be altered once recorded.
+- **DApps**: BlockFund runs as a decentralized application with zero downtime and resistance to fraud or censorship.
 
+---
 
-## Technologies Utilised:
+## 🛠️ Technologies Used
 
-- **Backend** ( **Web 3** folder ): Solidity
-- **Frontend** ( **Client** folder ): Javascript, React Js, Tailwind CSS,etc
-- We have used **Thirdweb** and **Hardhat** to create and deploy the dApp on **Sepolia testnet.**
+- **Smart Contracts**: [Solidity](https://soliditylang.org/)
+- **Frontend**: JavaScript, [React.js](https://reactjs.org/), [Tailwind CSS](https://tailwindcss.com/)
+- **Blockchain Tools**:
+  - [Thirdweb](https://thirdweb.com/): Used to create, deploy, and manage the dApp on the Ethereum blockchain.
+  - [Hardhat](https://hardhat.org/): Ethereum development environment for smart contract development and deployment.
+- **Test Network**: Deployed on the **Sepolia** testnet.
 
-**Thirdweb** is a tool for creating, deploying, and managing dApps on the Ethereum blockchain and **hardhat** is a development environment for Ethereum smart contract development.
+---
 
+## ⚙️ Installation & Setup
 
-## Challenges faced While Building this project:
+Follow these steps to install and run BlockFund locally:
 
-Though there were many but some of the major challenges we faced while building this crowdfunding DApp are:
-- Migrating from Goerli testnet to Sepolia testnet
-- Integration of Sepolia test network with the Ethereum Blockchain
-- Keeping an eye on deprecated standards of web3 adding new functionality to the DApp
+1. **Clone the Repository**
 
-## How to Install and Run?
+   ```bash
+   git clone https://github.com/Prasad0245/BlockFund.git
+   ```
 
-To Install and run this Blockchain based crowdfunding platform locally, one must follow all the steps mentioned below:
+2. **Navigate to the Web3 (Smart Contract) Directory**
 
-**Clone the repository:**
+   ```bash
+   cd BlockFund/web3
+   ```
 
-         https://github.com/thekiranmahajan/FundVerse.git
+3. **Install Dependencies**
 
-**Navigate to the web3 repository:**
+   ```bash
+   npm install
+   ```
 
-         cd web3
+4. **Navigate to the Client Directory**
 
-**Install required dependencies:**
+   ```bash
+   cd ../client
+   ```
 
-         npm install
+5. **Install Frontend Dependencies**
 
-**Navigate to the client repository:**
+   ```bash
+   npm install
+   ```
 
-         cd client
+6. **Start the Development Server**
 
-**Install required dependencies:**
+   ```bash
+   npm run dev
+   ```
 
-         npm install
+7. Open your browser and visit: [http://localhost:5173](http://localhost:5173)
 
-**Start the development server:**
+---
 
-         npm run dev
+## 🧑‍💻 How to Use
 
-Open your browser and visit http://localhost:5173 to view the user interface of the crowdfunding platform.
+To interact with BlockFund:
 
-## How to Use?
+- Install the [MetaMask](https://metamask.io/download/) browser extension (available for Chrome, Firefox, Edge, and Brave).
+- Connect MetaMask to the **Sepolia Testnet**.
+- Fund your wallet with test ETH via a Sepolia faucet.
+- You can now:
+  - **Create a campaign**
+  - **Donate to campaigns**
+  - **Track donation stats and campaign progress**
 
-To use this DApp user must have an extension called [Metamask](https://metamask.io/download/), this is a web browser extension, you can install it on Firefox, Chrome, Opera,etc.
+---
 
+## 🌟 Features
 
-## Additional Features: 
-   
-- The website offers Interactive forms so that contributors and campaign designers can both easily create and pool campaigns. 
-- These forms also Allow for donation and request approval.
-- The platform allows users to track the amount raised and days left for each campaign whereas, it includes functionality to track and display the number of donations made to a specific campaign, providing transparency and accountability.
-- The ability to track the progress of campaign creation and view multiple campaign cards created by different users adds transparency and visibility to the crowdfunding platform.
+- **Interactive Forms**: Simple UI for campaign creation and donations.
+- **Real-Time Campaign Tracking**: View amount raised, days left, and total donations.
+- **Multiple Campaign Cards**: Browse and interact with campaigns created by various users.
+- **Request Approval Feature**: Enhances trust between campaigners and donors.
+- **Donation History**: Provides transparency and accountability.
 
-## Credits:
+---
 
-https://github.com/adrianhajdin/project_crowdfunding
+## 📌 Challenges Overcome
 
-## Contributor:
+- Migration from **Goerli** to **Sepolia** testnet.
+- Sepolia integration issues with Ethereum nodes.
+- Adapting to updates and deprecated standards in Web3 while adding new DApp functionality.
 
-1.	https://github.com/thekiranmahajan
-2.	https://github.com/thesakshijaiswal
+---
+
+## 📂 Project Structure
+
+```
+BlockFund/
+│
+├── web3/            # Smart contracts and blockchain scripts
+│   └── contracts/
+│   └── scripts/
+│   └── hardhat.config.js
+│
+├── client/          # Frontend React app
+│   └── src/
+│   └── public/
+│   └── tailwind.config.js
+│
+└── README.md
+```
+
+---
+
+## 📎 Credit & Inspiration
+
+This project was inspired by open-source blockchain crowdfunding DApps and adapted to align with a social-networking and transparency-focused vision for BlockFund.
